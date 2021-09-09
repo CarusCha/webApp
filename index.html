@@ -7,6 +7,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="유튜브 냉철tv 콘텐츠">
+  <meta name="keywords" content="냉철tv,호우,홍콩턱돌">
+  <meta name="author" content="홍콩턱돌이">
+  <!-- <meta http-equiv="refresh" content="30">  -->
+  <!-- 30초마다 웹페이지 리프레시 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cold Steel TV</title>
 </head>
 
@@ -14,18 +20,26 @@
 
 
   <h1>Cold Steel TV</h1>
-  <p><img src="./assets/images/logo.png" alt="Cold Steel Logo" title="Cold Steel" width="100"></p>
+  <article>
+    <p><img src="./assets/images/logo.pn" alt="Cold Steel Logo" title="Cold Steel" width="100"></p>
+    <form action="http://localhost/result.php" autocomplete="on" method="post">
+      <p>
+        <input type="search" name="keyword" placeholder="검색어" required pattern="[a-zA-Z].+[0-9]" autofocus>
+        <input type="number" min="10" max="15">
+        <input type="submit" value="search">
+      </p>
+    </form>
+  </article>
 
-  <form action="http://localhost/result.php">
-    <p><input type="text" name="keyword">
-      <input type="submit" value="search"></p>
-  </form>
+
+  <video width="400" controls>
+    <source src="/assets/videos/test.mov">
+  </video>
 
 
-  <p id="demo"></p>
-  <script>
-  document.getElementById("demo").innerHTML =
-  "Page hostname is " + window.location.href;
-  </script>
+
+  <footer></footer>
+
 </body>
+
 </html>
