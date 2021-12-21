@@ -37,8 +37,8 @@
 
 
 
-  <script src="https://apis.google.com/js/api.js"></script>
-  <script>
+  <!-- <script src="https://apis.google.com/js/api.js"></script> -->
+  <!-- <script>
     /**
      * Sample JavaScript code for youtube.channelSections.list
      * See instructions for running APIs Explorer code samples locally:
@@ -74,9 +74,11 @@
     gapi.load("client:auth2", function() {
       gapi.auth2.init({client_id: "237853918516-f3q4ffsgu093fkrica546eg4j04obnpk.apps.googleusercontent.com"});
     });
-  </script>
-  <button onclick="authenticate().then(loadClient)">authorize and load</button>
-  <button onclick="execute()">execute</button>
+  </script> -->
+
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="src/js/youtubeRequest.js"></script>
+  <button onclick="HttpRequest.search('개발바라기')">try</button>
   
 
 
