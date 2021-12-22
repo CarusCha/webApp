@@ -1,0 +1,52 @@
+.iframe_container {
+    position: relative;
+    padding-bottom : 56.25%;
+    width: 100%;
+    height: 0;
+}
+/* iframe */
+iframe {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.scrollmenu {
+    position: fixed;
+    height: 90%;
+    overflow: scroll;
+}
+
+.contentView {
+    position: fixed;
+    left: 155px;
+    padding-right: 160px;
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+    overflow-wrap: break-word;
+}
+
+#totalChapterSec {
+    height: 40px;
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+}
+  
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

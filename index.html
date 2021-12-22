@@ -4,86 +4,38 @@
 <html lang="en" dir="ltr">
 
 <head>
+
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="description" content="유튜브 냉철tv 콘텐츠">
   <meta name="keywords" content="냉철tv,호우,홍콩턱돌이,Coldsteel">
   <meta name="author" content="홍콩턱돌이">
-  <!-- <meta http-equiv="refresh" content="30">  -->
-  <!-- 30초마다 웹페이지 리프레시 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Local CSS -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+
   <title>냉철tv</title>
 </head>
 
 <body>
-
   <div>
     <div>
       <p><img src="./assets/images/logo.png" alt="Coldsteel Logo" title="Coldsteel" width="100"></p>
     </div>
     <div>
-      <form action="http://localhost/result.php" autocomplete="on" method="post">
+      <form action="./searchList.html" autocomplete="on" method="get">
         <p>
-          <!-- <input type="search" name="keyword" placeholder="검색어" required pattern="[a-zA-Z].+[0-9]" autofocus> -->
-          <input type="search" name="keyword" placeholder="검색어" autofocus>
+          <input type="search" name="q" placeholder="검색어" autofocus>
           <input type="submit" value="search">
         </p>
       </form>
     </div>
   </div>
-  <article>
 
-  </article>
+  <footer>copyright</footer>
 
-
-
-
-  <!-- <script src="https://apis.google.com/js/api.js"></script> -->
-  <!-- <script>
-    /**
-     * Sample JavaScript code for youtube.channelSections.list
-     * See instructions for running APIs Explorer code samples locally:
-     * https://developers.google.com/explorer-help/guides/code_samples#javascript
-     */
-  
-    function authenticate() {
-      return gapi.auth2.getAuthInstance()
-          .signIn({scope: "https://www.googleapis.com/auth/youtube.readonly"})
-          .then(function() { console.log("Sign-in successful"); },
-                function(err) { console.error("Error signing in", err); });
-    }
-    function loadClient() {
-      gapi.client.setApiKey("AIzaSyAzxyS2TmTkQE94EUdhjqbcU2reh39Wg90");
-      return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
-          .then(function() { console.log("GAPI client loaded for API"); },
-                function(err) { console.error("Error loading GAPI client for API", err); });
-    }
-    // Make sure the client is loaded and sign-in is complete before calling this method.
-    function execute() {
-      return gapi.client.youtube.channelSections.list({
-        "part": [
-          "id"
-        ],
-        "channelId": "UCdlJ_IHHqtzV289zeQcqNaw"
-      })
-          .then(function(response) {
-                  // Handle the results here (response.result has the parsed body).
-                  console.log("Response", response);
-                },
-                function(err) { console.error("Execute error", err); });
-    }
-    gapi.load("client:auth2", function() {
-      gapi.auth2.init({client_id: "237853918516-f3q4ffsgu093fkrica546eg4j04obnpk.apps.googleusercontent.com"});
-    });
-  </script> -->
-
-  <script src="https://apis.google.com/js/api.js"></script>
-  <script src="src/js/youtubeRequest.js"></script>
-  <button onclick="HttpRequest.search('개발바라기')">try</button>
-  
-
-
-
-  <footer></footer>
+  <!-- Local JS -->
+  <script type="module" src="assets/js/script.js"></script>
 
 </body>
 
